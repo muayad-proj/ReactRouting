@@ -6,10 +6,12 @@ import Contact from "./components/Contact/Contact";
 //Import the Navigation component
 import Navigation from "./components/navigation/Navigation";
 import { Route, Switch } from "react-router-dom";
+import Jeopardy from "./components/jeopardy/Jeopardy";
 class App extends Component {
   render() {
     return (
-      <div>
+ 
+ <div className= "App">
         {/* render the Navigation component */}
         <Navigation />
         <Switch>
@@ -34,6 +36,8 @@ class App extends Component {
 
         <Route path="/clock" component={Clock} />
         <Route path="/contact" component={Contact} />
+        <Route path="/Jeopardy" component={Jeopardy} />
+
         <Route> 
           <Errorpage/>
         </Route>
